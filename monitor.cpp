@@ -16,6 +16,7 @@ int PulseRate_valid = 0;
 
 	if(pulseRate < 60 || pulseRate > 100)
 	{
+		cout << "Oxygen Saturation out of range!\n";
 		PulseRate_valid = 1;
 		Call_Sleep_Print();
 	}
@@ -29,6 +30,7 @@ int SpO2_Valid = 0;
 	
 	if(spo2 < 90)
 	{
+		cout << "Pulse Rate is out of range!\n";
 		SpO2_Valid = 1;
 		Call_Sleep_Print();	
 	}
@@ -42,6 +44,7 @@ int Temp_valid = 0;
 	
 	if(temperature > 102 || temperature < 95)
 	{
+		cout << "Temperature is critical!\n";
 		Temp_valid = 1;
 		Call_Sleep_Print();
 	}
