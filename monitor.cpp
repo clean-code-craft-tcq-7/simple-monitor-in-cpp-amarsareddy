@@ -50,7 +50,7 @@ int Temp_valid = 0;
 return Temp_valid;
 }
 
-void Call_Sleep_Print()
+int Call_Sleep_Print()
 {
    int i=0;
 	
