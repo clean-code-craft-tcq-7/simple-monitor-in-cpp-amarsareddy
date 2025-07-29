@@ -12,7 +12,7 @@ void Call_Sleep_Print();
 
 // ==== Main Check Function ====
 int vitalsOk(float temperature, float pulseRate, float spo2) {
-    return Temp_Check(temperature) && PulseRate_Check(pulseRate) && SpO2_Check(spo2);    //returns zero if vitals okay 
+    return Temp_Check(temperature) && PulseRate_Check(pulseRate) && SpO2_Check(spo2);    // returns zero if vitals okay 
 }
 
 // ==== Individual Checks ====
@@ -31,9 +31,9 @@ int SpO2_Check(float spo2)
     if (spo2 < 90)
     {
         Call_Sleep_Print();
-        return 0;    //Invalid
+        return 0;    // Invalid
     }
-    return 1;        //Valid
+    return 1;        // Valid
 }
 
 int Temp_Check(float temperature)
@@ -41,9 +41,9 @@ int Temp_Check(float temperature)
     if (temperature > 102 || temperature < 95)
     {
         Call_Sleep_Print();
-        return 0;    //Invalid
+        return 0;    // Invalid
     }
-    return 1;       //Valid
+    return 1;       // Valid
 }
 
 // ==== Display Function ====
