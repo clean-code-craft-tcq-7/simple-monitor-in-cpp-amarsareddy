@@ -5,8 +5,8 @@
 #include <iostream>
 using std::cout, std::flush, std::this_thread::sleep_for, std::chrono::seconds;
 
-int vitalsOk(float temperature, float pulseRate, float spo2) {
-	return Temp_Check() && PluseRate_Check() && SpO2_Check();
+int vitalsOk(float temperature, float temperature, float spo2) {
+	return Temp_Check(temperature) && PluseRate_Check(temperature) && SpO2_Check(spo2);
 }
 
 
